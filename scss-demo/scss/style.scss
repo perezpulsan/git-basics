@@ -1,0 +1,114 @@
+/* Global variables
+------------------------------------*/
+$font-stack: Helvetica, Arial, sans-serif;
+
+$primary-color:#458cce;
+$secondary-color:#4ebdb7;
+
+@import "variables";
+@import "mixins";
+
+/* Global styles
+------------------------------------*/
+
+body {
+    background: #f109d2;
+    margin: 10px;
+    font-family: $font-stack; 
+}
+
+h1 {
+    color: #000000;
+    font-size: 1.5rem;
+    display: inline;
+    background: #24c2ad;
+    border: 3px solid #0918f1;
+    border-radius: 10px; 
+    padding:5px 5px;
+}
+
+
+
+/* Nested Styles 
+-------------------------*/
+
+.my-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+.my-list-item {
+    &::before {
+        content:"\f061"; 
+        font-family: "FontAwesome";
+        padding-left:10px;
+        margin-right:10px;
+    }
+    
+.my-list-link {
+    text-decoration: none;
+    color: $primary-color;
+
+
+/* Using a mixin*/
+@include list-icon($list-icon, rgb (194,60,60))
+
+/* Referencing the parent selectors*/
+&:hover {
+    color: red;
+    }
+  }
+ }
+}
+
+/* Operators*/
+
+.box {
+    width: 100%;
+    miun-height: 50px;
+    background: #f3ec8c;
+    margin: 20px 0;
+
+    @if ($use-rounded-borders== true) {
+        border-radius: $border-radius;
+    }
+}
+
+//*Calculation*//
+.box_half {
+    width: 100%/2);
+
+}
+
+/* Functions */
+
+.box-dark{
+    background: darken (#f3ec8c, 20%);
+
+}
+
+.box-dark{
+    background: lighten (#f3ec8c, 20%);
+}
+
+.box-dark{
+    background: lighten (#f3ec8c, 20%);
+    
+}
+
+
+/*
+adjust-hue()
+saturate()
+grayscale()
+
+
+
+
+
+
+
+
+
+

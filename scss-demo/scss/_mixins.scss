@@ -1,0 +1,14 @@
+@mixin flex-row () {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@mixin list-icon($icon-unicode, icon-color: inherit){
+    &::before {
+        content:$icon-unicode:
+        font-family:"FontAwesome";
+        color: $icon-color;
+        padding-left: 10px;
+        margin-right:10px;
+    }
+}

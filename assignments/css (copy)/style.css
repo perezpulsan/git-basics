@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+.headpic {
+    height: 500px;
+    background-image: url("../images/waterfall.jpeg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+ }
+
+ .headpic-text {
+     position:absolute;
+     bottom: 30px;
+     left: 30px;
+     font-size: 60px;
+     color: #f2f2f2;
+     text-shadow: 2px 2px 2px #000000;
+ }
+
+ .clearfix:before,
+ .clearfix:after {
+     content: "";
+     display: table;
+ }
+ 
+ .clearfix:after {
+     clear: both;
+ }
+ 
+ .clearfix {
+     clear: both;
+     *zoom: 1;
+ }
+
+/* The navigation bar */
+ .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 40px;
+    border-bottom: 1px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position:relative;
+}
+
+#search {
+    float: right;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+/* searchbar styling*/
+.searchbar {
+
+    margin-top:10px;
+    margin-right:45px;;
+    border-radius:5px;
+    
+}
+
+/* search-button styling*/
+.search-button {
+    margin-top:10px;
+    float:right;
+    margin-right:3px;
+ }
+/*positions the head image*/
+#headpic {
+    width: 100%;
+    height: 350px;
+} 
+
+/*colums under photos*/
+.column-text{
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        vertical-align: middle;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        padding: 1em 0 1em 0;
+        display:inline;
+    
+}
+/*style for the small detail buttons*/
+.detail-button{
+    margin-top:10px;
+    padding:0,0,0,0;
+    border: 1px solid #000000;
+    background-color:rgba(49, 45, 45, 0.425);
+    border-radius: 5px;
+    font-size:smaller;
+}
+/*styles the pics in a circled shape*/
+.circle {
+    height:100px;
+    border-radius: 50%;
+    margin-top:15px;
+}
+
+.column-pic{
+    height:400px;
+}
+.second-column-pic {
+    height:400px;
+}
+
+
+.item {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+}
+
+.caption {
+    
+    text-align:center;
+    /* position:absolute; */
+    /* width:33%; */
+    /* height: 309px; */
+}
+
+.left{
+    float:left;
+}
+
+.subheadline-left {
+    color:rgb(87, 85, 85);
+
+}
+
+
+.right {
+    float:right;
+}
+
+.subheadline-right {
+    color:rgb(87, 85, 85);
+}
+
+
+
+
+/*positions the Back to top link*/
+#Back-to-top {
+    float: right;
+   margin-bottom:20px;
+   margin-right:60px;
+   text-decoration: none;
+}
+
+
+
+.main-item {
+    width: 75%;
+    margin: 10px auto;
+}

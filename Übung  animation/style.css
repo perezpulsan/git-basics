@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: #00ff00;
+    margin: 10px;
+    display: inline-block;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: #ffff00;
+    margin: 10px;
+    display: inline-block;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: #00ffff;
+    margin: 10px;
+    display: inline-block;
+}
+

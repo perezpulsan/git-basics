@@ -1,0 +1,102 @@
+.square1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(235, 10, 10);
+    display:inline-block;
+    }
+
+    .square2 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(44, 10, 235);
+        margin-top:10px;
+        display:inline-block;
+        }
+
+        .square3 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(12, 100, 0);
+            margin-top:10px;
+            display:inline-block;
+            }
+
+        .square1 {
+            animation-duration: 4s;
+            animation-name: rotate;
+          }
+          
+          @keyframes rotate {
+           25% {
+             transform: rotate(90deg);
+            }
+          
+            50% {
+                transform: rotate(180deg);
+               }
+               
+            75% {
+                transform: rotate(270deg);
+               }
+               
+            100% {
+                transform: rotate(360deg);
+               }
+            
+          }
+
+          .square2 {
+            animation-duration: 4s;
+            animation-name: rotate;
+          }
+          
+          @keyframes rotate {
+           25% {
+             transform: rotate(90deg);
+            }
+          
+            50% {
+                transform: rotate(180deg);
+               }
+               
+            75% {
+                transform: rotate(270deg);
+               }
+               
+            100% {
+                transform: rotate(360deg);
+               }
+
+             }
+
+             .square3 {
+                animation-duration: 4s;
+                animation-name: rotate-reverse;
+               }
+              
+              @keyframes rotate-reverse {
+               25% {
+                 transform: rotate(90deg);
+                }
+              
+                50% {
+                    transform: rotate(180deg);
+                   }
+                   
+                75% {
+                    transform: rotate(270deg);
+                   }
+                   
+                100% {
+                    transform: rotate(360deg);
+                   }
+    
+                 }
+                 
+                
+               
+                
+                
+               
+
+               
