@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+
+@import "variables";
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+
+
+$theme-color: (
+    "primary": #ff3300
+);
+
+/* Links inside the navbar */
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position:relative;
+}
+/* The navigation bar */
+.nav {
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 40px;
+    border-bottom: 1px;
+    z-index: 99;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position:relative;
+}
+
+.search {
+    float:right;
+}
+
+
+/* Change background on mouse-over */
+.nav a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* searchbar styling*/
+.search-bar {
+    margin-top:10px;
+    margin-right:45px;;
+    border-radius:5px;
+    float: right;
+}
+
+/* search-button styling*/
+.search-button {
+    margin-top:10px;
+    float:right;
+    margin-right:10px;
+    color:#485348;
+    background-color: #333;
+    float: right;
+}
+
+ #search {
+    float: right;
+}
+
+/*carousel*/
+.carousel-item active {
+    height: 500px;
+}
+.carousel-item {
+    height: 500px;
+}
+/* album css*/
+.pic-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    margin: 200px 40px 200px 200px;
+ }
+
+ .card {
+     display: block;
+     float: none;
+     list-style: none;
+     width: 100%;
+     margin-top: 10px;
+ }
+
+ .card img {
+     display: block;
+     width: 100%;
+     height: auto; 
+}
+
+ /*progress bar settings*/
+ .progress {
+     margin-top: 20px;
+     margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-left: 50px;
+}
+
+.section-drop{
+    margin-top:20px;
+    display: inline;
+}
+
+.btn btn-secondary {
+    margin-left: 50px;
+}
+
+.btn-group dropup{
+    margin-left: 50px;
+}
+.dropup-body{
+    margin-left: 50px;
+}
+
+#exTab1 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
