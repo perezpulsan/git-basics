@@ -1,10 +1,4 @@
-import Popper from "popper.js";
-window.jQuery = $;
-window.$ = $;
-
-require("bootstrap");
-
-("use strict");
+"use strict";
 
 /**
  * Enter a github username into a form and send this form to the Github API, to
@@ -100,18 +94,37 @@ class GithubApi {
     */
 
     return `
-      <tr class="table">
+      <div class="list-group">
+      <table class="table table-bordered table-hover">
+  <thead>
+      <th scope="col">Name</th>
+      <th scope="col">URL</th>
+      <th scope="col">Time</th>
+      <th scope="col">Description</th>
+  </thead>
+  <tbody>
+    <tr>
         ${repositories.map(repository => this.parseListItemTemplate(repository)).join("")}
-      </tr>
+        </tr>
+     </tbody>
+</table>
+      </div>
     `;
   }
 
   parseListItemTemplate(repository) {
     // Create the HTML markup for a single repository item
     // (using the .list-group-item class from bootstrap)
+    let {name, url, createdAt, description} = repository;
     return `
-        
-        <tr><a href="${repository.url}">Blah</a></tr>
+    <tr>
+      <th scope="row">${name}</th>
+      <td><a href="${url}">${url}</a></td>
+      <td>${moment(createdAt).fromNow()}</td>
+      <td>${description}</td>
+    </tr>
+
+    
     `;
   }
 }
