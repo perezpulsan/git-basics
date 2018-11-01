@@ -100,9 +100,9 @@ class GithubApi {
     */
 
     return `
-      <div class="list-group">
+      <tr class="table">
         ${repositories.map(repository => this.parseListItemTemplate(repository)).join("")}
-      </div>
+      </tr>
     `;
   }
 
@@ -110,17 +110,8 @@ class GithubApi {
     // Create the HTML markup for a single repository item
     // (using the .list-group-item class from bootstrap)
     return `
-        <a href="${repository.url}"
-           target="_blank"
-           class="list-group-item list-group-item-action flex-column align-items-start ">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">${repository.name}</h5>
-            <small>${moment(repository.createdAt).fromNow()}</small>
-          </div>
-          <p class="mb-1">
-            ${repository.description}
-          </p>
-        </a>
+        
+        <tr><a href="${repository.url}">Blah</a></tr>
     `;
   }
 }
